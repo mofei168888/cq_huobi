@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 class MgDB:
     def __init__(self):
-        self.conn = MongoClient('127.0.0.1', 27017)
+        self.conn = MongoClient('172.17.0.1', 27017)
         self.db = self.conn.cqdata
 
     def insert(self,coll_name,data):
