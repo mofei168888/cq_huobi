@@ -19,7 +19,7 @@ from time import sleep
 
 import requests
 
-from websocket import _exceptions,create_connection
+from websocket import create_connection
 
 try:
     from app.db import MgDB
@@ -567,7 +567,7 @@ class DataApi(object):
     def reconnect(self):
         """重连"""
         try:
-            self.ws = create_connection(self.url)
+            self.ws =create_connection(self.url)
             return True
         except:
             msg = traceback.format_exc()
@@ -588,7 +588,7 @@ class DataApi(object):
         self.url = url
 
         try:
-            self.ws = create_connection(self.url, sslopt={'cert_reqs': ssl.CERT_NONE})
+            self.ws =create_connection(self.url, sslopt={'cert_reqs': ssl.CERT_NONE})
             self.active = True
             self.thread.start()
             self.thread_db.start()

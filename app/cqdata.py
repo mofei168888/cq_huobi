@@ -8,7 +8,7 @@ except Exception as e:
 
 
 url = 'wss://api.huobi.pro/ws'
-codes = ['btcusdt','ethusdt','xrpusdt','eosusdt','bchusdt','bsvusdt','htusdt','ltcusdt']
+codes = ['btcusdt','ethusdt','xrpusdt','eosusdt','bchusdt','bsvusdt','htusdt','ltcusdt','trxusdt','neousdt','nulseth','dashusdt','zecusdt']
 
 if __name__ == '__main__':
 
