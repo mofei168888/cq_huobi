@@ -20,3 +20,4 @@ if __name__ == '__main__':
         api.subscribeMarketDetail(codes[i])
         api.subscribeKline(codes[i],'1min')
     api.subscribeMarketTickers()
+    print('start subscribe')

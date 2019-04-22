@@ -633,7 +633,7 @@ class DataApi(object):
             'id': str(self.reqid)
         }
         self.sendReq(req)
-
+        print(req)
         self.subDict[topic] = str(self.reqid)
 
     # ----------------------------------------------------------------------

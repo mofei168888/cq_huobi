@@ -25,7 +25,6 @@ RUN cd /trade && pip install -r base.txt
 RUN cd /trade && pip install -r requirements.txt
 
 
-
 EXPOSE 80
 
 
