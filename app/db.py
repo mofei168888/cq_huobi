@@ -29,7 +29,7 @@ class MgDB:
 
         print(self.params)
 
-        self.conn = MongoClient('127.0.0.1', 27017)
+        self.conn = MongoClient(self.params['ip'], self.params['port'])
         self.db = self.conn.cqdata
 
     def insert(self,coll_name,data):
