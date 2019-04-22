@@ -28,4 +28,4 @@ RUN cd /trade && pip install -r requirements.txt
 EXPOSE 80
 
 
-ENTRYPOINT ["python", "/trade/app/db.py"]
+ENTRYPOINT ["python", "/trade/app/cqdata.py"]

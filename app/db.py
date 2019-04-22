@@ -27,7 +27,7 @@ class MgDB:
         with open(file_name, 'r') as fr:
             self.params = json.load(fr)
 
-        print(self.params)
+        #print(self.params)
 
         self.conn = MongoClient(self.params['ip'], self.params['port'])
         self.db = self.conn.cqdata

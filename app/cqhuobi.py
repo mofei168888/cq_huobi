@@ -706,7 +706,7 @@ class DataApi(object):
                 data = self.queue_data.get()
                 data['symbol'] = data['ch'].split('.')[1]
                 data['time'] = stampToTime(data['ts'])
-                print(self.queue_data.qsize())
+                #print(self.queue_data.qsize())
                 if 'depth.step' in data['ch']:
                     self.db.insert('mt_depth', data)
 
