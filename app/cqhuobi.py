@@ -19,8 +19,7 @@ from time import sleep
 
 import requests
 
-from websocket import create_connection
-from websocket import *
+from websocket import _exceptions,create_connection
 
 try:
     from app.db import MgDB
