@@ -538,7 +538,7 @@ class DataApi(object):
 
         self.url = ''
 
-        self.db = MgDB()
+        self.db = MgDB('db_params.json')
         self.queue_data = Queue()  # 数据队列
 
 
@@ -633,7 +633,7 @@ class DataApi(object):
             'id': str(self.reqid)
         }
         self.sendReq(req)
-        print(req)
+        #print(req)
         self.subDict[topic] = str(self.reqid)
 
     # ----------------------------------------------------------------------
