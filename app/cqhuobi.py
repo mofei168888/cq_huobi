@@ -697,7 +697,6 @@ class DataApi(object):
             self.pong(data)
         elif 'ch' in data:
             self.queue_data.put(data)
-            print(data)
         elif 'err-code' in data:
             self.onError(u'错误代码：%s, 信息：%s' % (data['err-code'], data['err-msg']))
 
