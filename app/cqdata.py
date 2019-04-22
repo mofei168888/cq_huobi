@@ -1,6 +1,10 @@
 # encoding: UTF-8
 
-from app.cqhuobi import DataApi
+try:
+    from app.cqhuobi import DataApi
+except Exception as e:
+    from cqhuobi import DataApi
+
 
 
 url = 'wss://api.huobi.pro/ws'

@@ -20,8 +20,13 @@ from time import sleep
 import requests
 
 from websocket import _exceptions, create_connection
-from app.db import MgDB
-from app.timeformat import *
+
+try:
+    from app.db import MgDB
+    from app.timeformat import *
+except Exception as e:
+    from db import MgDB
+    from timeformat import *
 
 
 # 常量定义
