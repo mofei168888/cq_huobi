@@ -15,9 +15,9 @@ if __name__ == '__main__':
     api = DataApi()
     api.connect(url)
     for i in range(len(codes)):
-        api.subscribeMarketDepth(codes[i])
+        api.subscribeMarketDepth(codes[i],'step1')
         api.subscribeTradeDetail(codes[i])
-        api.subscribeMarketDetail(codes[i])
+        #api.subscribeMarketDetail(codes[i])
         api.subscribeKline(codes[i],'1min')
     api.subscribeMarketTickers()
     print('start subscribe')
